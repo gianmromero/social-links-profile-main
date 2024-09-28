@@ -1,0 +1,155 @@
+:root {
+    --background-color: hsl(0, 0%, 8%);
+    --container-color: hsl(0, 0%, 12%);
+    --card-color: hsl(0, 0%, 20%);
+    --location-text-color: hsl(75, 94%, 57%);
+    --text-color: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0 auto;
+    padding: 116.5px 0px;
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 327px;
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: var(--container-color);
+    box-sizing: border-box;
+    border-radius: 12px;
+
+}
+.social-image-profile {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+}
+.social-location{
+    color: var(--location-text-color);
+    margin-top: 4px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.social-name {
+    margin: 4px 0;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.social-description {
+    margin-top: -7px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.social-buttons button {
+    border-radius: 8px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: bold;
+    border: none;
+    /*Transition*/
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/*Hover State*/
+.social-buttons button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+.social-link-github {
+    padding: 12px 115px;
+    margin-bottom: 16px;
+}
+.social-link-frontend {
+    padding: 12px 82px;
+    margin-bottom: 16px;
+}
+.social-link-linkedin {
+    padding: 12px 110px;
+    margin-bottom: 16px;
+}
+.social-link-twitter {
+    padding: 12px 114.5px;
+    margin-bottom: 16px;
+}
+.social-link-instagram {
+    padding: 12px 104.5px;
+    margin-bottom: 16px;
+}
+
+.social-name, .social-description {
+    color: var(--text-color);
+}
+
+/*Tablet*/
+@media (max-width: 456px) {
+    .container {
+        width: 456px;
+        height: 611px;
+    }
+    .social-link-github {
+        padding: 12px 163.5px;
+    }
+    .social-link-frontend {
+        padding: 12px 130.5px;
+    }
+    .social-link-linkedin {
+        padding: 12px 158.5px;
+    }
+    .social-link-twitter {
+        padding: 12px 163px;
+    }
+    .social-link-instagram {
+        padding: 12px 153px;
+        
+    }
+}
+
+/*Desktop*/
+@media (max-width: 1280px) {
+    .container {
+        width: 384px;
+        height: 611px;
+    }
+    .social-link-github {
+        padding: 12px 127.5px;
+    }
+    .social-link-frontend {
+        padding: 12px 94.5px;
+    }
+    .social-link-linkedin {
+        padding: 12px 122.5px;
+    }
+    .social-link-twitter {
+        padding: 12px 127px;
+    }
+    .social-link-instagram {
+        padding: 12px 117px;
+        
+    }
+}
